@@ -1,0 +1,50 @@
+{
+   "action": {
+      "default_icon": "img/logo-48.png",
+      "default_popup": "popup.html",
+      "default_title": "SpeedyApply"
+   },
+   "author": {
+      "email": "kirk@speedyapply.com"
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "assets/index.tsx-loader-fcd1e98f.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Applying to jobs just got easier. Automate job applications with a single click and track your progress over time.",
+   "differential_fingerprint": "1.f15e1a63c20c24232362c57be29ba0c32994b075dc847200372e33d69ee9e626",
+   "homepage_url": "https://speedyapply.com",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "img/logo-128.png",
+      "16": "img/logo-16.png",
+      "32": "img/logo-32.png",
+      "48": "img/logo-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlcGrEhb20+Zo1vrslurXRqYEVk7IH6cV30Xge/gi5WwaIqLgB235A7lMTYRRV+pROtbsutie3mbB6YHsQT3OF/N94fdA7EkEfvaELnsMYS8G7stqdQq9i8iIACrHlwvqn8jI3G5KlRFH1zqWU/ihRbg+WdAYK1zR9lX6VqBpJplsYaPYmtGdfMpfWz1tSd+cQlpm3ffHOPUt7j8DWY3sLME/C4HMqPf+++yVWMsw/gaYYhPo/6vaRSpvT73OfMK2MlxXRf+NYh5x8NKO7B1hE4KAXlbBwyBKbAdO+rOFl1rAKPiwhApDw3bjVVc1HJMLXXB190xPFWbl+UVYZvvuWQIDAQAB",
+   "manifest_version": 3,
+   "name": "SpeedyApply: Job Application Autofill Tool",
+   "options_page": "options.html",
+   "permissions": [ "storage", "sidePanel", "tabs" ],
+   "short_name": "SpeedyApply",
+   "side_panel": {
+      "default_path": "sidepanel.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.7.1",
+   "web_accessible_resources": [ {
+      "matches": [  ],
+      "resources": [ "img/logo-16.png", "img/logo-32.png", "img/logo-48.png", "img/logo-128.png" ],
+      "use_dynamic_url": false
+   }, {
+      "matches": [ "*://*/*" ],
+      "resources": [ "assets/chunk-d322d42c.js", "assets/chunk-a1acf4e9.js", "assets/chunk-014cd8aa.js", "assets/chunk-8a96a0db.js", "assets/chunk-28862920.js" ],
+      "use_dynamic_url": false
+   } ]
+}
